@@ -1,0 +1,44 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\아트만\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\아트만\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\아트만\bin;C:\WINDOWS\Softcamp\SDK;C:\WINDOWS\Softcamp\SDS\x64;C:\WINDOWS\Softcamp\SDS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Bandizip;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;D:\jdk-11.0.8\bin;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\아트만\AppData\Local\Microsoft\WindowsApps;C:\Users\아트만\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\아트만\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.3.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\workspace\ts_todo_list\node_modules\bufferutil\prebuilds\win32-x64\node.napi.node'
+
+npm manifest: 
+  {
+    "scripts": {
+      "start": "snowpack dev",
+      "build": "snowpack build"
+    },
+    "dependencies": {
+      "canvas-confetti": "^1.2.0",
+      "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+      "@snowpack/plugin-typescript": "^1.2.1",
+      "@types/canvas-confetti": "^1.0.0",
+      "@types/snowpack-env": "^2.3.3",
+      "@types/uuid": "^8.3.4",
+      "prettier": "^2.2.1",
+      "snowpack": "^3.3.7",
+      "typescript": "^4.2.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
