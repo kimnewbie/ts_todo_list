@@ -135,7 +135,7 @@ body {
 }
 
 #list li:hover {
-    text-decoration: line-through wavy #24bffb;
+    text-decoration: line-through wavy #7964f3;
 }
 
 input[type='checkbox'] {
@@ -151,9 +151,9 @@ input[type='checkbox']:before {
     height: 16px;
     top: 0;
     left: 0;
-    border: 2px solid #555555;
+    border: 2px solid #7964f3;
     border-radius: 3px;
-    background-color: white;
+    background-color: #fff;
 }
 
 input[type='checkbox']:checked:after {
@@ -161,7 +161,7 @@ input[type='checkbox']:checked:after {
     display: block;
     width: 5px;
     height: 10px;
-    border: solid black;
+    border: solid #7964f3;
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -174,4 +174,8 @@ input[type='checkbox']:checked:after {
 label {
     display: flex;
     gap: 10px;
+}
+
+input[type=checkbox]:checked+span {
+    text-decoration: line-through wavy #7964f3;
 }

@@ -39,13 +39,15 @@ function addListItem(task: Task) {
   const item = document.createElement("li");
   const label = document.createElement("label");
   const checkbox = document.createElement("input");
+  const span = document.createElement("span");
   checkbox.addEventListener("change", () => {
     task.completed = checkbox.checked;
     saveTasks();
   });
   checkbox.type = "checkbox";
   checkbox.checked = task.completed;
-  label.append(checkbox, task.title);
+  span.append(task.title);
+  label.append(checkbox, span);
   item.append(label);
   list?.append(item);
 }
