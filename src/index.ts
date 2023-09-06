@@ -53,11 +53,12 @@ function addListItem(task: Task) {
 }
 
 function saveTasks() {
+  localStorage.setItem("TASKS", JSON.stringify(tasks));
   sessionStorage.setItem("TASKS", JSON.stringify(tasks));
+  document.cookie = `TASKS=${JSON.stringify(tasks)};`;
 }
-
 function loadTasks(): Task[] {
-  const taskJSON = sessionStorage.getItem("TASKS");
+  const taskJSON = localStorage.getItem("TASKS");
   if (taskJSON == null) return [];
   return JSON.parse(taskJSON);
 }
